@@ -80,9 +80,45 @@ static string getDataSiOra(Bilet t)
 	return "Data: " + t.getData() + "    Ora: " + t.getOra();
 }
 
+float Bilet::getPret()
+{
+	return pret;
+}
+
 int Bilet::getId()
 {
 	return idBilet;
+}
+
+char* Bilet::getTipEveniment()
+{
+	return tipEveniment;
+}
+
+string Bilet::getTipStr()
+{
+	string s = tipEveniment;
+	return s;
+}
+
+string Bilet::getDenumireEveniment()
+{
+	return denumireEveniment;
+}
+
+string Bilet::getAdresa()
+{
+	return adresa;
+}
+
+string Bilet::getLocBilet()
+{
+	return locBilet;
+}
+
+string Bilet::getMentiuni()
+{
+	return mentiuni;
 }
 
 void Bilet::setTipEvenimentStr(string auxs)

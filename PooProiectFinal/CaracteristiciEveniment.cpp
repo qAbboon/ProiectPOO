@@ -332,9 +332,28 @@ istream& operator>>(istream& in, CaracteristiciEveniment& t)
 		getline(in, auxs);
 	}
 	t.luna = stoi(auxs);
-	if (t.luna < lunapc || t.luna>12)
+	if (t.an == anpc)
 	{
-		while (t.luna < lunapc || t.luna>12)
+		if (t.luna < lunapc || t.luna>12)
+		{
+			while (t.luna < lunapc || t.luna>12)
+			{
+				cout << "Ati introdus o luna gresita. Va rugam sa introduceti luna corect: ";
+				in >> ws;
+				getline(in, auxs);
+				while (isNumber(auxs) == 0)
+				{
+					cout << "Formatul lunii este gresit. Introduceti doar cifre: ";
+					in >> ws;
+					getline(in, auxs);
+				}
+				t.luna = stoi(auxs);
+			}
+		}
+	}
+	else
+	{
+		while (t.luna>12)
 		{
 			cout << "Ati introdus o luna gresita. Va rugam sa introduceti luna corect: ";
 			in >> ws;
@@ -358,9 +377,28 @@ istream& operator>>(istream& in, CaracteristiciEveniment& t)
 		getline(in, auxs);
 	}
 	t.zi = stoi(auxs);
-	if (t.zi < zipc || t.zi>getNumberOfDays(t.luna, t.an))
+	if (t.an == anpc && t.luna == lunapc)
 	{
-		while (t.zi < zipc || t.zi>getNumberOfDays(t.luna, t.an))
+		if (t.zi < zipc || t.zi>getNumberOfDays(t.luna, t.an))
+		{
+			while (t.zi < zipc || t.zi>getNumberOfDays(t.luna, t.an))
+			{
+				cout << "Ati introdus ziua gresit. Va rugam sa introduceti ziua corect: ";
+				in >> ws;
+				getline(in, auxs);
+				while (isNumber(auxs) == 0)
+				{
+					cout << "Formatul zilei este gresit. Introduceti doar cifre: ";
+					in >> ws;
+					getline(in, auxs);
+				}
+				t.zi = stoi(auxs);
+			}
+		}
+	}
+	else
+	{
+		while (t.zi>getNumberOfDays(t.luna, t.an))
 		{
 			cout << "Ati introdus ziua gresit. Va rugam sa introduceti ziua corect: ";
 			in >> ws;
@@ -403,6 +441,23 @@ istream& operator>>(istream& in, CaracteristiciEveniment& t)
 			}
 		}
 	}
+	else
+	{
+		oraI = t.ceasInInt(t.ora);
+		while (oraI > 23 || oraI<0)
+		{
+			cout << "Ati introdus ora gresit. Va rugam sa introduceti ora corect: ";
+			in >> ws;
+			getline(in, t.ora);
+			while (isNumber(t.ora) == 0)
+			{
+				cout << "Formatul orei este gresit. Introduceti doar cifre: ";
+				in >> ws;
+				getline(in, t.ora);
+			}
+			oraI = t.ceasInInt(t.ora);
+		}
+	}
 	cout << "Introduceti minutul evenimentului: ";
 	in >> ws;
 	getline(in, t.minut);
@@ -430,6 +485,23 @@ istream& operator>>(istream& in, CaracteristiciEveniment& t)
 				}
 				minutI = t.ceasInInt(t.minut);
 			}
+		}
+	}
+	else
+	{
+		minutI = t.ceasInInt(t.minut);
+		while (minutI>59)
+		{
+			cout << "Ati introdus minutul gresit. Va rugam sa introduceti minutul corect: ";
+			in >> ws;
+			getline(in, t.minut);
+			while (isNumber(t.minut) == 0)
+			{
+				cout << "Formatul minutului este gresit. Introduceti doar cifre: ";
+				in >> ws;
+				getline(in, t.minut);
+			}
+			minutI = t.ceasInInt(t.minut);
 		}
 	}
 	string buffer;

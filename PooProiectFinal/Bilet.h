@@ -21,9 +21,15 @@ public:
 	Bilet(const Bilet&);
 	static string getDataSiOra();
 	int getId();
+	float getPret();
+	string getDenumireEveniment();
+	string getMentiuni();
+	string getLocBilet();
 	string getData();
 	string getOra();
 	string getAdresa();
+	string getTipStr();
+	char* getTipEveniment();
 	static void setAdresa(string);
 	void setTipEvenimentStr(string auxs);
 	~Bilet();

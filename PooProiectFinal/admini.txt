@@ -1,0 +1,30 @@
+admin
+2
+N / A
+admin
+1
+0
+jhon1
+2
+N / A
+John Smith
+0
+0
+Mark John
+2
+N / A
+Mark John Anthony
+0
+1
+admin2
+2
+parola
+admin2 nume
+1
+1
+ad
+2
+ad
+ad
+1
+1

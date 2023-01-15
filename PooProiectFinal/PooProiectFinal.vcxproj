@@ -127,18 +127,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="AngajatValidare.cpp" />
     <ClCompile Include="Bilet.cpp" />
     <ClCompile Include="CaracteristiciEveniment.cpp" />
     <ClCompile Include="CaracteristiciLocatie.cpp" />
+    <ClCompile Include="PretTaxeReduceri.cpp" />
+    <ClCompile Include="TaxaReducere.cpp" />
     <ClCompile Include="TestareBiletFULL.cpp" />
     <ClCompile Include="PooProiectFinal.cpp" />
+    <ClCompile Include="User.cpp" />
     <ClCompile Include="Zone.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Admin.h" />
+    <ClInclude Include="AngajatValidare.h" />
     <ClInclude Include="Bilet.h" />
     <ClInclude Include="CaracteristiciEveniment.h" />
     <ClInclude Include="CaracteristiciLocatie.h" />
+    <ClInclude Include="PretTaxeReduceri.h" />
+    <ClInclude Include="TaxaReducere.h" />
     <ClInclude Include="TestareBiletFULL.h" />
+    <ClInclude Include="User.h" />
     <ClInclude Include="Zone.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

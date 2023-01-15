@@ -1,0 +1,25 @@
+mark1
+0
+N / A
+Mark Twin
+0
+angajat
+0
+N / A
+angajat
+1
+11john
+0
+N / A
+John Smith
+1
+adrian
+1
+N / A
+Adrian Tomescu
+1
+Marius
+1
+N / A
+Teodor Marius
+0

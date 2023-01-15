@@ -254,7 +254,8 @@ istream& operator>>(istream& in, CaracteristiciLocatie& t)
 		getline(in, auxs);
 	}
 	t.maxLocuri = stoi(auxs);
-	while (t.maxLocuri - t.getTotalLocuri() != 0)
+	int hlp = 0;
+	while (t.maxLocuri - hlp != 0)
 	{
 		if (t.maxLocuri <= 0)
 		{
@@ -424,6 +425,7 @@ istream& operator>>(istream& in, CaracteristiciLocatie& t)
 		{
 			cout << "Datele despre numarul zonelor, randurilor sau a locurilor pe randuri au fost introduse gresit, va rugam sa incercati din nou!";
 		}
+		hlp = t.getTotalLocuri();
 	}
 	return in;
 }
