@@ -131,7 +131,9 @@
     <ClCompile Include="AngajatValidare.cpp" />
     <ClCompile Include="Bilet.cpp" />
     <ClCompile Include="CaracteristiciEveniment.cpp" />
+    <ClCompile Include="CaracteristiciEvenimentText.cpp" />
     <ClCompile Include="CaracteristiciLocatie.cpp" />
+    <ClCompile Include="CaracteristiciLocatieText.cpp" />
     <ClCompile Include="PretTaxeReduceri.cpp" />
     <ClCompile Include="TaxaReducere.cpp" />
     <ClCompile Include="TestareBiletFULL.cpp" />
@@ -143,8 +145,10 @@
     <ClInclude Include="Admin.h" />
     <ClInclude Include="AngajatValidare.h" />
     <ClInclude Include="Bilet.h" />
+    <ClInclude Include="CaracteristiciEvenimentText.h" />
     <ClInclude Include="CaracteristiciEveniment.h" />
     <ClInclude Include="CaracteristiciLocatie.h" />
+    <ClInclude Include="CaracteristiciLocatieText.h" />
     <ClInclude Include="PretTaxeReduceri.h" />
     <ClInclude Include="TaxaReducere.h" />
     <ClInclude Include="TestareBiletFULL.h" />

@@ -48,6 +48,12 @@
     <ClCompile Include="CaracteristiciLocatie.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CaracteristiciEvenimentText.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CaracteristiciLocatieText.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TestareBiletFULL.h">
@@ -78,6 +84,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Admin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CaracteristiciEvenimentText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CaracteristiciLocatieText.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
